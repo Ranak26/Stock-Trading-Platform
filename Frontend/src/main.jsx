@@ -12,6 +12,7 @@ import Support from './Landing_Page/Support/Hero.jsx'
 import Navbar from './Landing_Page/Navbar.jsx'
 import Footer from './Landing_Page/Footer.jsx'
 import NotFound from './Landing_Page/NotFound.jsx'
+import ProductPage from './Landing_Page/Products/ProductPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -20,7 +21,7 @@ createRoot(document.getElementById('root')).render(
     <Route path='/' element={<Homepage/>}></Route>
     <Route path='/signup' element={<Signup/>}></Route>
     <Route path='/about' element={<About/>}></Route>
-    <Route path='/products' element={<Product/>}></Route>
+    <Route path='/products' element={<ProductPage/>}></Route>
     <Route path='/pricing' element={<Pricing/>}></Route>
     <Route path='/support' element={<Support/>}></Route>
     <Route path='*' element={<NotFound/>}></Route>
